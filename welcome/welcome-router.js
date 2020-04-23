@@ -4,7 +4,7 @@ const router = express.Router()
 
 router.get("/", (req, res, next) => {
 	res.json({
-		message: "Welcome",
+		message: "Welcome to node-db2-guided.",
 	})
 })
 
