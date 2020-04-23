@@ -11,6 +11,12 @@ const db = knex({
 
 const router = express.Router()
 
+
+/////// This handles the route http://localhost:5555/fruits ///////
+
+
+/////////////// GET ///////////////
+
 router.get("/", async (req, res, next) => {
 	try {
 		const fruits = await db("fruits")
@@ -20,6 +26,8 @@ router.get("/", async (req, res, next) => {
 		next(err)
 	}
 })
+
+// GET fruit by ID //
 
 router.get("/:id", async (req, res, next) => {
 	try {
@@ -31,6 +39,9 @@ router.get("/:id", async (req, res, next) => {
 		next(err)
 	}
 })
+
+
+/////////////// POST ///////////////
 
 router.post("/", async (req, res, next) => {
 	try {

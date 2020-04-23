@@ -4,7 +4,7 @@ const welcomeRouter = require("./welcome/welcome-router")
 const fruitsRouter = require("./fruits/fruits-router")
 
 const server = express()
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 5555
 
 server.use(helmet())
 server.use(express.json())
