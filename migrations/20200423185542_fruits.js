@@ -12,13 +12,12 @@ exports.up = async function(knex) {
     //     "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
     //     "name" TEXT NOT NULL UNIQUE,
     //     "avgWeightOz" FLOAT NOT NULL,
-    //     "delicious" BOOLEAN NOT NULL DEFAULT true,
-    //     "color" TEXT
+    //     "delicious" BOOLEAN NOT NULL DEFAULT true
     // );
 
 
 };
 
-exports.down = function(knex) {
-
+exports.down = async function(knex) {
+    await knex.schema.dropTableIfExists("fruits")
 };
