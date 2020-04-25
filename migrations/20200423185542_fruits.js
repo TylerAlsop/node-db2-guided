@@ -8,6 +8,7 @@ exports.up = async function(knex) {
     })
 
 
+    // SQL Code:
     // CREATE TABLE IF NOT EXISTS "fruits" (
     //     "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
     //     "name" TEXT NOT NULL UNIQUE,

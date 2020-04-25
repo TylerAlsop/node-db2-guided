@@ -1,4 +1,3 @@
-
 exports.up = async function(knex) {
     await knex.schema.alterTable("fruits", (table) => {
         table.text("color")
